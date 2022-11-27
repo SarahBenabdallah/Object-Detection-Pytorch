@@ -1,9 +1,10 @@
 # Object-Detection-Pytorch
 ## Introduction
 Implementing a tool which can take screenshots when the objects {car, truck, motorcycle, bus} are detected inside the area of interest. 
-The center of a bounding box is the reference point to determine the location of an object.
-All detections inside the area of interest need to appear on the screenshot with a bounding box respecting the color convention you are given.
-Those screenshots will have to respect the following name pattern: “folder_path/screenshots/highway_{i}/{hour}h/{timestamp}.png”
+The center of a bounding box is the reference point to determine the location of an object.  
+All detections inside the area of interest need to appear on the screenshot with a bounding box respecting the color convention you are given.  
+Those screenshots will have to respect the following name pattern: 
+###### “output/screenshots/highway_{i}/{hour}h/{timestamp}.png”
 ## Table of Contents 
 
  * [input](./input)
