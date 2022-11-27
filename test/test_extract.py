@@ -41,6 +41,31 @@ class TestExtract(unittest.TestCase):
                 extract.extract_index(testString),
                 expectedIndex, f"test failed for testIndex {testString}")
 
+    def test_get_area_coord(self):
+        zones = {"highway_1": [
+                [[70, 305], [313, 305], [313, 173], [70, 173]]
+                ],
+                "highway_2":  [
+                [[686, 496], [1051, 496], [1051, 362], [686, 362]]
+                ]}
+        highway = "highway_1"
+        xmin, xmax, ymin, ymax = 70, 313, 173, 305
+        self.assertEqual(
+                extract.get_area_coord(zones, highway),
+                (xmin, xmax, ymin, ymax), f"test failed for testIndex {zones}")
+
+        zones = {"highway_1": [
+                [[70, 305], [313, 305], [313, 173], [70, 173]]
+                ],
+                "highway_2":  [
+                [[686, 496], [1051, 496], [1051, 362], [686, 362]]
+                ]}
+        highway = "highway_2"
+        xmin, xmax, ymin, ymax = 686, 1051, 362, 496
+        self.assertEqual(
+                extract.get_area_coord(zones, highway),
+                (xmin, xmax, ymin, ymax), f"test failed for testIndex {zones}")
+
 
 if __name__ == '__main__':
     unittest.main()
