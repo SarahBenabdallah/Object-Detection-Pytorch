@@ -56,7 +56,7 @@ avec:
 ## Example of Illustration
 ![Screenshot of a detected car][logo]
 
-[logo]: https://github.com/SarahBenabdallah/Object-Detection-Pytorch/master/output/screenshots/highway_2/9h2022-11-27T18-59-18+01-00UTC.png "Screenshot of a detected car"
+[logo]: https://github.com/SarahBenabdallah/Object-Detection-Pytorch/blob/master/output/screenshots/highway_2/9h/2022-11-27T18-59-18%2B01-00UTC.png "Screenshot of a detected car"
 ## Test
 To run unit test of some functions :
  ```python
