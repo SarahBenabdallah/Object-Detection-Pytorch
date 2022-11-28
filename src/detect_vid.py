@@ -94,6 +94,7 @@ def main():
             # increment frame count
             frame_count += 1
             # press `q` to exit
+            # print("********", fps, frame_count, total_fps)
             wait_time = max(1, int(fps/4))
             cv2.imshow('image', image)
             if cv2.waitKey(wait_time) & 0xFF == ord('q'):
